@@ -1,173 +1,164 @@
 <!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Resume</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+<head>
+  <title>Resume</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+  <!-- Header Alignment Fix -->
   <style>
+    #header {
+      background: #fff;
+    }
+
     #header .inner {
-      display: flex !important;
-      justify-content: space-between !important;
-      align-items: center !important;
-      border: 2px solid red; /* testing */
-      height: 70px;
-      padding: 0 1em;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 80px; /* consistent height */
+      padding: 0 1.5em;
+      border: 2px solid red; /* for testing alignment */
     }
 
-    #header .logo,
-    #header nav {
+    .logo {
       display: flex;
       align-items: center;
-      padding: 0;
-      margin: 0;
+      text-decoration: none;
+      color: inherit;
     }
 
-    #header .logo .symbol img {
-      height: 40px; /* controls logo size */
+    .logo .symbol {
+      margin-right: 0.5em;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo .symbol img {
+      height: 40px;
       width: auto;
-      vertical-align: middle;
+      display: block;
     }
 
-    #header .logo .symbol {
-      margin-right: 0.5em; /* spacing between logo and title */
+    .logo .title {
+      font-size: 1.25em;
+      font-weight: bold;
     }
 
-    #header nav ul {
+    nav ul {
+      list-style: none;
       display: flex;
       align-items: center;
       margin: 0;
       padding: 0;
-      list-style: none;
     }
 
-    #header nav ul li a {
-      padding: 0.5em 1em;
+    nav ul li a {
       font-size: 1em;
+      padding: 0.5em 1em;
+      text-decoration: none;
+      color: inherit;
       line-height: 1;
-      display: inline-block;
     }
   </style>
-	</head>
-	<body class="is-preload">
-		<!-- Wrapper -->
-			<div id="wrapper">
+</head>
 
-				<!-- Header -->
-					<header id="header">
-						<div class="inner">
+<body class="is-preload">
+  <div id="wrapper">
 
-							<!-- Logo -->
-								<a href="index.html" class="logo">
-									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Jason</span>
-								</a>
+    <!-- Header -->
+    <header id="header">
+      <div class="inner">
 
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
+        <!-- Logo -->
+        <a href="index.html" class="logo">
+          <span class="symbol"><img src="images/logo.svg" alt="Logo" /></span>
+          <span class="title">Jason</span>
+        </a>
 
-						</div>
-					</header>
+        <!-- Nav -->
+        <nav>
+          <ul>
+            <li><a href="#menu">Menu</a></li>
+          </ul>
+        </nav>
 
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="generic.html">Resume</a></li>
-							<li><a href="Accomplishments.html">Accomplishments</a></li>
-							<li><a href="elements.html">Elements</a></li>
-						</ul>
-					</nav>
+      </div>
+    </header>
 
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<header>
-								<h1>This is Phantom, a free, fully responsive site<br />
-								template designed by <a href="http://html5up.net">HTML5 UP</a>.</h1>
-								<p>Etiam quis viverra lorem, in semper lorem. Sed nisl arcu euismod sit amet nisi euismod sed cursus arcu elementum ipsum arcu vivamus quis venenatis orci lorem ipsum et magna feugiat veroeros aliquam. Lorem ipsum dolor sit amet nullam dolore.</p>
-							</header>
-							<section class="tiles">
-								<article class="style1">
-									<span class="image">
-										<img src="images/pic01.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Magna</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-								<article class="style3">
-									<span class="image">
-										<img src="images/pic03.jpg" alt="" />
-									</span>
-									<a href="generic.html">
-										<h2>Feugiat</h2>
-										<div class="content">
-											<p>Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-										</div>
-									</a>
-								</article>
-							</section>
-						</div>
-					</div>
+    <!-- Menu -->
+    <nav id="menu">
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="generic.html">Resume</a></li>
+        <li><a href="Accomplishments.html">Accomplishments</a></li>
+        <li><a href="elements.html">Elements</a></li>
+      </ul>
+    </nav>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<div class="inner">
-							<section>
-								<h2>Get in touch</h2>
-								<form method="post" action="#">
-									<div class="fields">
-										<div class="field half">
-											<input type="text" name="name" id="name" placeholder="Name" />
-										</div>
-										<div class="field half">
-											<input type="email" name="email" id="email" placeholder="Email" />
-										</div>
-										<div class="field">
-											<textarea name="message" id="message" placeholder="Message"></textarea>
-										</div>
-									</div>
-									<ul class="actions">
-										<li><input type="submit" value="Send" class="primary" /></li>
-									</ul>
-								</form>
-							</section>
-							<section>
-								<h2>Follow</h2>
-								<ul class="icons">
-									<li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
-									<li><a href="#" class="icon brands style2 fa-500px"><span class="label">500px</span></a></li>
-									<li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
-									<li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
-								</ul>
-							</section>
-							<ul class="copyright">
-								<li>&copy; Untitled. All rights reserved</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</footer>
+    <!-- Main -->
+    <div id="main">
+      <div class="inner">
+        <header>
+          <h1>Hello! Welcome to Jason Khan's Resume!<br />
+            Feel free to click around and check out my <a href="https://jasonkhan-resume.github.io/generic.html">Resume</a>.
+          </h1>
+          <p>Lorem ipsum stuff about this awesome template and whatever else you want to say here.</p>
+        </header>
+        <!-- Tiles or content can go here -->
+      </div>
+    </div>
 
-			</div>
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="inner">
+        <section>
+          <h2>Get in touch</h2>
+          <form method="post" action="#">
+            <div class="fields">
+              <div class="field half">
+                <input type="text" name="name" id="name" placeholder="Name" />
+              </div>
+              <div class="field half">
+                <input type="email" name="email" id="email" placeholder="Email" />
+              </div>
+              <div class="field">
+                <textarea name="message" id="message" placeholder="Message"></textarea>
+              </div>
+            </div>
+            <ul class="actions">
+              <li><input type="submit" value="Send" class="primary" /></li>
+            </ul>
+          </form>
+        </section>
+        <section>
+          <h2>Follow</h2>
+          <ul class="icons">
+            <li><a href="#" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+            <li><a href="#" class="icon brands style2 fa-dribbble"><span class="label">Dribbble</span></a></li>
+            <li><a href="#" class="icon brands style2 fa-github"><span class="label">GitHub</span></a></li>
+            <li><a href="#" class="icon solid style2 fa-phone"><span class="label">Phone</span></a></li>
+            <li><a href="#" class="icon solid style2 fa-envelope"><span class="label">Email</span></a></li>
+          </ul>
+        </section>
+        <ul class="copyright">
+          <li>&copy; Untitled. All rights reserved</li>
+          <li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        </ul>
+      </div>
+    </footer>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+  </div>
 
-	</body>
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
 </html>
