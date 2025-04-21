@@ -6,14 +6,41 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-<style>
-		#header .inner {
-			display: flex !important;
-			justify-content: space-between !important;
-			align-items: center !important;
-			border: 2px solid red; /* for testing */
-		}
-	</style>
+		<style>
+		  #header .inner {
+		    display: flex !important;
+		    justify-content: space-between !important;
+		    align-items: center !important;
+		    border: 2px solid red; /* test border */
+		    padding: 1em; /* add some breathing room */
+		  }
+		
+		  #header .logo,
+		  #header nav {
+		    display: flex;
+		    align-items: center;
+		    margin: 0;
+		    padding: 0;
+		  }
+		
+		  #header .logo .symbol {
+		    display: flex;
+		    align-items: center;
+		    margin-right: 0.5em; /* space between logo and title */
+		  }
+		
+		  #header nav ul {
+		    display: flex;
+		    align-items: center;
+		    margin: 0;
+		    padding: 0;
+		  }
+		
+		  #header nav ul li a {
+		    line-height: 1;
+		    padding: 0.5em 1em;
+		  }
+		</style>	
 	</head>
 	<body class="is-preload">
 		<!-- Wrapper -->
