@@ -40,21 +40,21 @@
 			box-shadow: 0 0 20px #fff;
 			border-radius: 8px;
 		}
-		.flex-images {
+		.sales-preview-row {
 			display: flex;
-			justify-content: center;
 			gap: 15px;
 			flex-wrap: wrap;
+			justify-content: flex-start;
 			margin-top: 1em;
 		}
-		.flex-images .image img {
-			max-width: 200px;
-			width: 100%;
+		.sales-thumb {
+			width: 30%;
+			min-width: 180px;
 			cursor: pointer;
-			border-radius: 8px;
+			border-radius: 6px;
 			transition: transform 0.3s ease;
 		}
-		.flex-images .image img:hover {
+		.sales-thumb:hover {
 			transform: scale(1.05);
 		}
 	</style>
@@ -92,7 +92,7 @@
 				<h1>My Accomplishments</h1>
 				<p>Here are the Gorgias Statistics from April 21st, 2024 - April 20th, 2025</p>
 
-				<!-- Gorgias Full Width Lightbox Image -->
+				<!-- Full-width lightbox image -->
 				<a href="#img1"><img src="images/2024 - 2025 Statistics.png" alt="Gorgias Stats" class="lightbox-thumb" /></a>
 				<a href="#" class="lightbox" id="img1"><img src="images/2024 - 2025 Statistics.png" alt="Gorgias Stats Full" /></a>
 
@@ -101,10 +101,25 @@
 				<a href="#" class="lightbox" id="img2"><img src="images/Gorgias_Urgent_Views.png" alt="Urgent Views Full" /></a>
 
 				<p>Maintaining a continuous record of Highest monthly Saved Sales</p>
-				<div class="flex-images">
-					<a href="#jan"><img src="images/January_Sales.png" alt="January Sales" /></a>
-					<a href="#feb"><img src="images/February_Sales.png" alt="February Sales" /></a>
-					<a href="#mar"><img src="images/March_Sales.png" alt="March Sales" /></a>
+				<div class="sales-preview-row">
+					<a href="#jan"><img src="images/January_Sales.png" alt="January Sales" class="sales-thumb" /></a>
+					<a href="#feb"><img src="images/February_Sales.png" alt="February Sales" class="sales-thumb" /></a>
+					<a href="#mar"><img src="images/March_Sales.png" alt="March Sales" class="sales-thumb" /></a>
 				</div>
+
 				<!-- Lightboxes for sales images -->
-				<a href="#" class="lightbox" id="jan"><img src="images/January_Sales.png"_
+				<a href="#" class="lightbox" id="jan"><img src="images/January_Sales.png" alt="January Sales Full" /></a>
+				<a href="#" class="lightbox" id="feb"><img src="images/February_Sales.png" alt="February Sales Full" /></a>
+				<a href="#" class="lightbox" id="mar"><img src="images/March_Sales.png" alt="March Sales Full" /></a>
+			</div>
+		</div>
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+</body>
+</html>
