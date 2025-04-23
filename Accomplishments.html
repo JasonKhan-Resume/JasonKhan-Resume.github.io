@@ -1,22 +1,24 @@
 <html>
 <head>
-	<title>Accomplishments</title>
+	<title>Jason Khan - NativePath Resume</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-	<!-- Lightbox and layout CSS -->
+	<!-- Lightbox and layout styles -->
 	<style>
-		.thumb {
-			max-width: 300px;
+		.lightbox-thumb {
+			width: 100%;
+			max-width: 100%;
 			border: 2px solid transparent;
 			transition: border-color 0.3s ease, transform 0.3s ease;
 			cursor: pointer;
+			border-radius: 8px;
 		}
-		.thumb:hover {
+		.lightbox-thumb:hover {
 			border-color: #007BFF;
-			transform: scale(1.05);
+			transform: scale(1.01);
 		}
 		.lightbox {
 			display: none;
@@ -28,10 +30,11 @@
 			text-align: center;
 		}
 		.lightbox:target {
-			display: block;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 		}
 		.lightbox img {
-			margin-top: 5%;
 			max-width: 90%;
 			max-height: 85vh;
 			box-shadow: 0 0 20px #fff;
@@ -39,29 +42,32 @@
 		}
 		.flex-images {
 			display: flex;
+			justify-content: center;
 			gap: 15px;
 			flex-wrap: wrap;
-			justify-content: center;
 			margin-top: 1em;
 		}
 		.flex-images .image img {
 			max-width: 200px;
 			width: 100%;
+			cursor: pointer;
 			border-radius: 8px;
+			transition: transform 0.3s ease;
+		}
+		.flex-images .image img:hover {
+			transform: scale(1.05);
 		}
 	</style>
 </head>
 <body class="is-preload">
-	<!-- Wrapper -->
 	<div id="wrapper">
+
 		<!-- Header -->
 		<header id="header">
 			<div class="inner">
-				<!-- Logo -->
 				<a href="index.html" class="logo">
 					<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Jason Khan</span>
 				</a>
-				<!-- Nav -->
 				<nav>
 					<ul>
 						<li><a href="#menu">Menu</a></li>
@@ -86,33 +92,19 @@
 				<h1>My Accomplishments</h1>
 				<p>Here are the Gorgias Statistics from April 21st, 2024 - April 20th, 2025</p>
 
-				<!-- Expandable Image -->
-				<a href="#stats">
-					<img src="images/2024 - 2025 Statistics.png" alt="Gorgias Stats" class="thumb" />
-				</a>
-				<a href="#" class="lightbox" id="stats">
-					<img src="images/2024 - 2025 Statistics.png" alt="Gorgias Stats Full" />
-				</a>
+				<!-- Gorgias Full Width Lightbox Image -->
+				<a href="#img1"><img src="images/2024 - 2025 Statistics.png" alt="Gorgias Stats" class="lightbox-thumb" /></a>
+				<a href="#" class="lightbox" id="img1"><img src="images/2024 - 2025 Statistics.png" alt="Gorgias Stats Full" /></a>
 
 				<p>Assisted with the implementation of TRT Urgent Ticket Views</p>
-				<span class="image main"><img src="images/Gorgias_Urgent_Views.png" alt="" /></span>
+				<a href="#img2"><img src="images/Gorgias_Urgent_Views.png" alt="Urgent Views" class="lightbox-thumb" /></a>
+				<a href="#" class="lightbox" id="img2"><img src="images/Gorgias_Urgent_Views.png" alt="Urgent Views Full" /></a>
 
 				<p>Maintaining a continuous record of Highest monthly Saved Sales</p>
 				<div class="flex-images">
-					<span class="image"><img src="images/January_Sales.png" alt="January Sales" /></span>
-					<span class="image"><img src="images/February_Sales.png" alt="February Sales" /></span>
-					<span class="image"><img src="images/March_Sales.png" alt="March Sales" /></span>
+					<a href="#jan"><img src="images/January_Sales.png" alt="January Sales" /></a>
+					<a href="#feb"><img src="images/February_Sales.png" alt="February Sales" /></a>
+					<a href="#mar"><img src="images/March_Sales.png" alt="March Sales" /></a>
 				</div>
-			</div>
-		</div>
-	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
-</body>
-</html>
+				<!-- Lightboxes for sales images -->
+				<a href="#" class="lightbox" id="jan"><img src="images/January_Sales.png"_
