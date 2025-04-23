@@ -1,66 +1,118 @@
-<!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Jason Khan - NativePath Resume</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="is-preload">
-		<!-- Wrapper -->
-			<div id="wrapper">
+<head>
+	<title>Accomplishments</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 
-				<!-- Header -->
-					<header id="header">
-						<div class="inner">
-
-							<!-- Logo -->
-								<a href="index.html" class="logo">
-									<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Jason Khan</span>
-								</a>
-
-							<!-- Nav -->
-								<nav>
-									<ul>
-										<li><a href="#menu">Menu</a></li>
-									</ul>
-								</nav>
-
-						</div>
-					</header>
-
-				<!-- Menu -->
-					<nav id="menu">
-						<h2>Menu</h2>
-						<ul>
-							<li><a href="index.html">Home</a></li>
-							<li><a href="generic.html">Resume</a></li>
-							<li><a href="Accomplishments.html">Accomplishments</a></li>
-						</ul>
-					</nav>
-
-				<!-- Main -->
-					<div id="main">
-						<div class="inner">
-							<h1>My Accomplishments</h1>
-							<p>Here are the Gorgias Statistics from April 21st, 2024 - April 20th, 2025</p>
-							<span class="image main"><img src="images/2024 - 2025 Statistics.png" alt="" /></span>
-							<p>Assisted with the implementation of TRT Urgent Ticket Views</p>
-							<span class="image main"><img src="images/Gorgias_Urgent_Views.png" alt="" /></span>
-							<p>Maintaining a continuous record of Highest monthly Saved Sales</p>
-							<span class="image main"><img src="images/January_Sales.png" alt="" /></span>
-							<span class="image main"><img src="images/February_Sales.png" alt="" /></span>
-							<span class="image main"><img src="images/March_Sales.png" alt="" /></span>						</div>
-					</div>
+	<!-- Lightbox and layout CSS -->
+	<style>
+		.thumb {
+			max-width: 300px;
+			border: 2px solid transparent;
+			transition: border-color 0.3s ease, transform 0.3s ease;
+			cursor: pointer;
+		}
+		.thumb:hover {
+			border-color: #007BFF;
+			transform: scale(1.05);
+		}
+		.lightbox {
+			display: none;
+			position: fixed;
+			z-index: 9999;
+			top: 0; left: 0;
+			width: 100vw; height: 100vh;
+			background: rgba(0, 0, 0, 0.85);
+			text-align: center;
+		}
+		.lightbox:target {
+			display: block;
+		}
+		.lightbox img {
+			margin-top: 5%;
+			max-width: 90%;
+			max-height: 85vh;
+			box-shadow: 0 0 20px #fff;
+			border-radius: 8px;
+		}
+		.flex-images {
+			display: flex;
+			gap: 15px;
+			flex-wrap: wrap;
+			justify-content: center;
+			margin-top: 1em;
+		}
+		.flex-images .image img {
+			max-width: 200px;
+			width: 100%;
+			border-radius: 8px;
+		}
+	</style>
+</head>
+<body class="is-preload">
+	<!-- Wrapper -->
+	<div id="wrapper">
+		<!-- Header -->
+		<header id="header">
+			<div class="inner">
+				<!-- Logo -->
+				<a href="index.html" class="logo">
+					<span class="symbol"><img src="images/logo.svg" alt="" /></span><span class="title">Jason Khan</span>
+				</a>
+				<!-- Nav -->
+				<nav>
+					<ul>
+						<li><a href="#menu">Menu</a></li>
+					</ul>
+				</nav>
 			</div>
+		</header>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+		<!-- Menu -->
+		<nav id="menu">
+			<h2>Menu</h2>
+			<ul>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="generic.html">Resume</a></li>
+				<li><a href="Accomplishments.html">Accomplishments</a></li>
+			</ul>
+		</nav>
 
-	</body>
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+				<h1>My Accomplishments</h1>
+				<p>Here are the Gorgias Statistics from April 21st, 2024 - April 20th, 2025</p>
+
+				<!-- Expandable Image -->
+				<a href="#stats">
+					<img src="images/2024 - 2025 Statistics.png" alt="Gorgias Stats" class="thumb" />
+				</a>
+				<a href="#" class="lightbox" id="stats">
+					<img src="images/2024 - 2025 Statistics.png" alt="Gorgias Stats Full" />
+				</a>
+
+				<p>Assisted with the implementation of TRT Urgent Ticket Views</p>
+				<span class="image main"><img src="images/Gorgias_Urgent_Views.png" alt="" /></span>
+
+				<p>Maintaining a continuous record of Highest monthly Saved Sales</p>
+				<div class="flex-images">
+					<span class="image"><img src="images/January_Sales.png" alt="January Sales" /></span>
+					<span class="image"><img src="images/February_Sales.png" alt="February Sales" /></span>
+					<span class="image"><img src="images/March_Sales.png" alt="March Sales" /></span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
 </html>
